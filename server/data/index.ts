@@ -1,8 +1,8 @@
 import { AuthenticationClient, InMemoryTokenStore, RedisTokenStore } from '@ministryofjustice/hmpps-auth-clients'
-import PrisonerLocationApiClient from './prisonerLocationApiClient'
-import logger from '../../logger'
-import config from '../config'
 import { createRedisClient } from './redisClient'
+import config from '../config'
+import logger from '../../logger'
+import PrisonerLocationApiClient from './prisonerLocationApiClient'
 import applicationInfoSupplier from '../applicationInfo'
 
 const applicationInfo = applicationInfoSupplier()
